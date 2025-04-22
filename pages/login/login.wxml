@@ -1,0 +1,42 @@
+<view class="login-content">
+  <view class="login-bubble"></view>
+  <view class="flex-center">
+    <view class="login-box">
+      <view class="text-center mb-12">
+        <view class="avatar-container">
+          <image src="/images/touxiang.png" class="avatar" mode="aspectFit"></image>
+        </view>
+        <text class="title">欢迎登录</text>
+      </view>
+      
+      <view class="input-group">
+        <view class="input-icon">
+          <text class="iconfont icon-user"></text>
+        </view>
+        <input type="text" placeholder="请输入用户名/手机号码" class="login-input" bindinput="inputUsername" />
+      </view>
+      
+      <view class="input-group">
+        <view class="input-icon">
+          <text class="iconfont icon-lock"></text>
+        </view>
+        <input type="password" placeholder="请输入密码" class="login-input" bindinput="inputPassword" />
+      </view>
+      
+      <button class="login-button" bindtap="login">登录</button>
+      
+      <view class="text-center actions">
+        <text class="link">注册</text>
+      </view>
+      
+      <view class="agreement">
+        <checkbox-group bindchange="checkboxChange">
+          <checkbox value="agree" color="#3bbfb0" />
+          <text class="agreement-text">
+            已阅读并同意《用户协议》和《隐私政策》
+          </text>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+</view>
